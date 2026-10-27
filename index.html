@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rekengame</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Rekengame</h1>
+
+      <div class="stats-container">
+        <div class="score-board">Score: <span id="score">0</span></div>
+        <div class="time-board">Tijd: <span id="time">30</span>s</div>
+        <div class="lives-board">Levens: <span id="hearts">❤️❤️❤️</span></div>
+      </div>
+
+      <div class="problem-container">
+        <span id="num1">0</span>
+        <span class="operator">×</span>
+        <span id="num2" >0</span>
+        <span>=</span>
+        <span class="operator">?</span>
+      </div>
+
+      <div class="input-section" id="input-section">
+        <input
+          type="number"
+          id="answer-input"
+          placeholder="Typ je antwoord..."
+          autocomplete="off"
+          autofocus
+        />
+      </div>
+
+      <div class="button-section" id="button-section">
+        <button id="check-btn">Controleer antwoord</button>
+        <button id="new-problem-btn">Maak nieuwe som</button>
+      </div>
+
+      <div
+        class="game-over-section"
+        id="game-over-section"
+        style="display: none; margin-bottom: 1rem"
+      >
+        <button id="restart-btn">Start Again</button>
+      </div>
+
+      <div id="feedback" class="feedback"></div>
+    </div>
+
+  
+    <script src="script.js"></script>
+
+  </body>
+</html>
